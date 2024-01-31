@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="newcha.css">
+        <title>City of chattanooga</title>
+    </head>
+        <div id="gridWrapper">
+            <div id="stateHeadingAndNavWrapper">
+                <header>
+                        <h1 class="H1" >
+                            City of Chattanooga
+                        </h1>
+                </header>
+                <nav class="navbar">
+                    <a href="index.html">Back to Main Page</a>
+                    <a href="" >Activities and Tourism</a>
+                    <a href="" >Contact Us</a>
+                    <div class="dropdown">
+                        <span class="dropbtn">Cities
+                        </span>
+                        <div class="dropdown-content">
+                            <a href="nashville.html">Nashville</a>
+                            <a href="knoxville.html">Knoxville</a>
+                            <a href="memphis.html">Memphis</a>
+                            <a href="newcha.html">Chattanooga</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <section id="sectionContent">
+                    <h1 class="H1">Chattanooga is here for you!</h1>
+                    <ul class="content">
+                        Chattanooga has diverse industry, history, and culture.
+                        <li>
+                            Chattanooga has many major industries from across the modern business climate.  
+                        </li>
+                        <li>
+                            Chattanooga was founded a few hundred years ago in 1839.  
+                        </li>
+                        <li>
+                            Chattanooga is a diverse blend of many kinds of people. The History museum, coolage park, and lookout mountain are all great ways to get your cultural fix.
+                        </li>
+                    </ul>
+                    <div id="indexPic1"><img src="cAside.jpg" alt="Nashville, Tennessee cityscape during a cloudy afternoon." id="indexPic1"></div>
+                    <h1 class="H1">Chattanooga is a beautiful place place for students and tourists alike! </h1>
+                    <p class="content">
+                      The population of chattanooga was just over 180,000 as of 2020. The city is in the East Tennessee grand division. The city is urban. 
+                        The median income was 35,000 per household as of 2020. 
+                        Tourism and higher education are the two largest industries in chattanooga. With excellent public universities in both chattanooga state
+                        and the University of chattanooga Tennessee anyone can get to the next step in their career with the opportunities in this city.
+                        Tourism is also rich and vibrant. There are many wonderful local restaurants and sites to see in chattanooga. Lookout Mountain, 
+                        Ruby Falls, the chattanooga Aquarium, and other beautiful sites will keep you and your family busy during your travels. 
+                        In 1816, John and Lewis Ross arrived and settled the area. In 1839 the State of Tennessee incorporated the city of chattanooga. chattanooga 
+                        grew into an important city during the civil war because of its immediate access to the Tennessee river and excellent railroad access. 
+<script>
+function validateEmail()
+{
+    document.body.style.transform='scale(1)';
+    var email = document.getElementById("email").value;
+    var emailConfirm = document.getElementById("emailConfirm").value;
+    var submit = document.getElementById("mySubmit");
+ 
+    if(email !== emailConfirm)
+    {
+        console.log("failure");
+        alert("Email addresses do not match.");
+        return false;
+    }
+    else if (email.trim() === "" || emailConfirm.trim() === "")
+    {
+        console.log("failure");
+        alert("Both email fields must be filled with valid entries.");
+        return false; 
+    }
+    else if (email.includes("@") 
+    && emailConfirm.includes("@")
+    && email.includes(".")
+    && emailConfirm.includes("."))
+    {   
+        console.log("success");
+        alert("Email Addresses Match!");
+        return true; 
+    }
+    else 
+    {
+        console.log("failure");
+        alert("Email address fields appear to be invalid. Please check that both email addresses match and are in valid format including an '@' and '.' and try again.");
+        return false; 
+    }
+   
+}    
+</script>
+            
+                    <h1 class="H1">Feel free to send a question to our staff using the form below.</h1>
+                    <!-- Form written by example from textbook to fullfill assessment requirement-->
+                    <form method="GET" action="index.html" class="form" onSubmit="validateEmail()" >
+                            <div class="formElements"><label for="firstName" class="formElements">First Name:</label>
+                                <input type="text" name="firstName" class="formElements" placeholder="ex:Frank" ></div>
+                            <div class="formElements"><label for="lastName" class="formElements">Last Name:</label>
+                                <input type="text" name="lastName" class="formElements" placeholder="ex:West" ></div>
+                            <div class="formElements"><label for="email" class="formElements">Email:</label>
+                                <input type="text" name="email" class="formElements" placeholder="ex:frank.west@capcom.com" id="email" ></div>
+                            <div class="formElements"><label for="emailConfirm" class="formElements" >Confirm Email:</label>
+                                <input type="text" name="emailConfirm" class="formElements" placeholder="ex:frank.west@capcom.com" id="emailConfirm"></div>
+                            <div class="formElements"><label for="userQuestion" class="formElements" >User Question:</label>
+                                <input type="textarea" name="userQuestion" class="formElements"placeholder="Ask a question" >
+                                <input type="button" class="formElements" id="mySubmit" value="Submit" onclick="validateEmail()">
+                            </div>
+
+                        
+                    </form>
+                <p class="content">This page will provide tourists and the curious minded an overview of what the a visit to the city of chattanooga might be like. Feel free to look around
+                    and take time to check out our other pages. 
+                </p>
+                <div id="bottomBanner"><img alt="map of memphis" src="cMap.jpg" id="bottomBanner" height="250" width="450"></div>
+                </section>
+            <div id="containerAside">
+                <aside>
+                    <h1 class="H1">
+                        chattanooga is here for you!
+                    </h1>
+                    <p class="content">
+                        <div class="content">Fun facts about chattanooga!</br></div>
+                        <ol class="content" style="list-style-type: none;">
+                            <li>If you stand at the peak out chattanooga's famous lookout mountain you can see seven states. What a view!
+                            </li> 
+                            <br/>
+                            <li>The incline railway which can take you to the top of lookout mountain is the most inclined passenger railway in the world.
+                                Let's get inclined! </li>
+                            <br/>
+                            <li>Mini golf was originally invented in chattanooga! Four!  </li>
+                            <br/>
+                            <li>chattanooga is called "Gig City" for rolling out a next generation municipal fibre network so that its communication infrastructure
+                                is ready for the next generation. 
+                            </li>
+                            <br/>
+                            <li>There is a famous UFO shaped home built in 1973 by a local named Curtis King sitting amongst the curves of signal mountain. </li>
+                            <br/>
+                        </ol>
+
+                        <a href="https://en.wikipedia.org/wiki/Tennessee" target="_blank" >Click here for more information on Wikipedia!</a>
+                    </p>
+                </aside>
+            </div>
+            <div id="containerFooter">
+                <footer>
+                    <h1 class="H1">Gallery</h1>
+                    <h2 id="footerContent"></h2>
+                        <table>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 1"
+                                    src="c1.jpg"
+                                    width="140"height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 2"
+                                    src="c3.jpg"
+                                    width="140"height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 3"
+                                    src="c2.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 4"
+                                    src="c4.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 5"
+                                    src="c5.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 6"
+                                    src="c6.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 7"
+                                    src="c7.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 8"
+                                    src="c8.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 9"
+                                    src="c9.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                        </table>    
+                </footer>
+            </div>
+        </div>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="nashville.css">
+        <title>City of Nashville</title>
+    </head>
+        <div id="gridWrapper">
+            <div id="stateHeadingAndNavWrapper">
+                <header>
+                        <h1 class="H1" >
+                            City of Nashville
+                        </h1>
+                </header>
+                <nav class="navbar">
+                    <a href="index.html">Back to Main Page</a>
+                    <a href="" >Activities and Tourism</a>
+                    <a href="" >Contact Us</a>
+                    <div class="dropdown">
+                        <span class="dropbtn">Cities
+                        </span>
+                        <div class="dropdown-content">
+                            <a href="nashville.html">Nashville</a>
+                            <a href="knoxville.html">Knoxville</a>
+                            <a href="memphis.html">Memphis</a>
+                            <a href="newcha.html">Chattanooga</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <section id="sectionContent">
+                    <h1 class="H1">Nashville is Music City!</h1>
+                    <ul class="content">
+                        Nashville has diverse industry, history, and culture.
+                        <li>
+                            Nashville has many major industries from across the modern business climate. 
+                        </li>
+                        <li>
+                            Nashville was founded a few hundred years ago in 1779. Talk about wisdom!
+                        </li>
+                        <li>
+                            Nashville is a diverse blend of many kinds of people. The parthenon, fine art, and Tennessee Performing Art 
+                            Center are all great ways to get your cultural fix. 
+                        </li>
+                    </ul>
+                    <div id="indexPic1"><img src="indexPic1.jpg" alt="Nashville, Tennessee cityscape during a cloudy afternoon." id="indexPic1"></div>
+                    <h1 class="H1">Nashville brings modern collaboration for business and liesure together with an old fashioned feel.</h1>
+                    <p class="content">
+                        Some important industries in Nashville are Health Care, Finance, Auto Workers, Insurance, Music Production, Publishing Print Materials, and tourism.
+                        Nashville has an incredible history as the state capital of tennessee. The population, as of 2020, was just under 700,000 people. The city is located
+                        in the Middle Tenneessee grand dvision. Nashville is an urban city. The median income for a household as of 2020 was 46,000 per year.
+                        In 1779, Nashville was founded by James Robertson. The city was originally called Fort Nashborough named after the Revolutionary 
+                        War hero Francis Nash. Nashville rapidly expanded in the following decades beause of easy river access and central location. 
+                        In 1806 Nashville officially became a city and in 1843 it became the Capital of Tennessee. Over the following decades the city thrived.  
+                    </p>
+<script>
+function validateEmail()
+{
+    document.body.style.transform='scale(1)';
+    var email = document.getElementById("email").value;
+    var emailConfirm = document.getElementById("emailConfirm").value;
+    var submit = document.getElementById("mySubmit");
+ 
+    if(email !== emailConfirm)
+    {
+        console.log("failure");
+        alert("Email addresses do not match.");
+        return false;
+    }
+    else if (email.trim() === "" || emailConfirm.trim() === "")
+    {
+        console.log("failure");
+        alert("Both email fields must be filled with valid entries.");
+        return false; 
+    }
+    else if (email.includes("@") 
+    && emailConfirm.includes("@")
+    && email.includes(".")
+    && emailConfirm.includes("."))
+    {   
+        console.log("success");
+        alert("Email Addresses Match!");
+        return true; 
+    }
+    else 
+    {
+        console.log("failure");
+        alert("Email address fields appear to be invalid. Please check that both email addresses match and are in valid format including an '@' and '.' and try again.");
+        return false; 
+    }
+   
+}    
+</script>
+            
+                    <h1 class="H1">Feel free to send a question to our staff using the form below.</h1>
+                    <!-- Form written by example from textbook to fullfill assessment requirement-->
+                    <form method="GET" action="index.html" class="form" onSubmit="validateEmail()" >
+                            <div class="formElements"><label for="firstName" class="formElements">First Name:</label>
+                                <input type="text" name="firstName" class="formElements" placeholder="ex:Frank" ></div>
+                            <div class="formElements"><label for="lastName" class="formElements">Last Name:</label>
+                                <input type="text" name="lastName" class="formElements" placeholder="ex:West" ></div>
+                            <div class="formElements"><label for="email" class="formElements">Email:</label>
+                                <input type="text" name="email" class="formElements" placeholder="ex:frank.west@capcom.com" id="email" ></div>
+                            <div class="formElements"><label for="emailConfirm" class="formElements" >Confirm Email:</label>
+                                <input type="text" name="emailConfirm" class="formElements" placeholder="ex:frank.west@capcom.com" id="emailConfirm"></div>
+                            <div class="formElements"><label for="userQuestion" class="formElements" >User Question:</label>
+                                <input type="textarea" name="userQuestion" class="formElements"placeholder="Ask a question" >
+                                <input type="button" class="formElements" id="mySubmit" value="Submit" onclick="validateEmail()">
+                            </div>
+
+                        
+                    </form>
+                <p class="content">This page will provide tourists and the curious minded an overview of what the a visit to the city of Nashville might be like. Feel free to look around
+                    and take time to check out our other pages. 
+                </p>
+                <div id="bottomBanner"><img alt="map of nashville" src="nashvilleMap.jpg" width="500" height="250"></div>
+                </section>
+            <div id="containerAside">
+                <aside>
+                    <h1 class="H1">
+                        Nashville is Music City!
+                    </h1>
+                    <p class="content">
+                        <div class="content">Fun facts about Music City!</br></div>
+                        <ol class="content" style="list-style-type: none;">
+                            <li>Nashville was given it's name after a Revolutionary War General, Francis Nash. Thanks Francis! </li> 
+                            <br/>
+                            <li>The Tin Pan South, which Nashville hosts, is the largest songwriter's festival on earth. Sounds like a fun time! </li>
+                            <br/>
+                            <li>A student of Vanderbilt University helped bring seeing eye dogs to America. Good Dog! </li>
+                            <br/>
+                            <li>Nashville was the first southern city to desegregate public business. Freedom for all!</li>
+                            <br/>
+                            <li>The man who designed and architected the Tennessee State Capitol was actually entombed their upon his passing. Spooky!</li>
+                            <br/>
+                        </ol>
+
+                        <a href="https://en.wikipedia.org/wiki/Tennessee" target="_blank" >Click here for more information on Wikipedia!</a>
+                    </p>
+                </aside>
+            </div>
+            <div id="containerFooter">
+                <footer>
+                    <h1 class="H1">Gallery</h1>
+                    <h2 id="footerContent"></h2>
+                        <table>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 1"
+                                    src="nashville1.jpg"
+                                    width="140"height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 2"
+                                    src="nashville2.jpg"
+                                    width="140"height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 3"
+                                    src="nashville3.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 4"
+                                    src="nashville4.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 5"
+                                    src="nashville5.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 6"
+                                    src="nashville6.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 7"
+                                    src="nashville7.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 8"
+                                    src="nashville8.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 9"
+                                    src="nashville9.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                        </table>    
+                </footer>
+            </div>
+        </div>
+</html>

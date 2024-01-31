@@ -1,0 +1,215 @@
+<!-- HTML declaration for browser-->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Define document head character set link the CSS sheet and title the page-->
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <title>State of Tennessee </title>
+    </head>
+    <!--Create a CSS grid that wraps the entire page for responsive layout-->
+        <div id="gridWrapper">
+            <div id="stateHeadingAndNavWrapper">
+                <!-- Header for index page-->
+                <header>
+                        <h1 class="H1" >
+                            State of Tennessee
+                        </h1>
+                </header>
+                <!-- Navigation bar including superficial links as well as functional links complete with rollover animation as 
+                required by assessment-->
+                <nav class="navbar">
+                    <a href="" >Activities and Tourism</a>
+                    <a href="" >Contact Us</a>
+                    <!-- On hover object that will be defined in CSS for rollover animation required by assessment-->
+                    <div class="dropdown">
+                        <span class="dropbtn">Cities
+                        </span>
+                        <div class="dropdown-content">
+                            <a href="nashville.html">Nashville</a>
+                            <a href="knoxville.html">Knoxville</a>
+                            <a href="memphis.html">Memphis</a>
+                            <a href="newcha.html">Chattanooga</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Document section as required by assessment-->
+            <section id="sectionContent">
+                    <h1 class="H1">Tennessee is the place to be!</h1>
+                    <!-- Unordered list as as required by assessment with three items-->
+                    <ul class="content">
+                        Tennessee has 3 geographical regions called "Grand Divisions"
+                        <li>
+                            East Tennessee
+                        </li>
+                        <li>
+                            Middle Tennessee
+                        </li>
+                        <li>
+                            West Tennessee
+                        </li>
+                    </ul>
+                    <!-- Picture element with float property to fullfill assessment requirement-->
+                    <div id="indexPic1"><img src="stateFlag.jpg" alt="Nashville, Tennessee cityscape during a cloudy afternoon." id="indexPic1"></div>
+                    <h1 class="H1">Tennessee's three "Grand Divisions" are both cultural and geographic in nature.</h1>
+                    <!-- Main section content-->
+                    <p class="content">
+                        East Tennessee includes the Great Smoky Mountains, the eastern Tennessee River valley, and a portion of the Cumberland Plateau. 
+                        Middle Tennessee includes the rest of the Cumberland Plateau and the low-lying Central basin, completely surrounded by the Highland Rim. This are of Tennessee is hilly and fertile.
+                        West Tennessee ends with the Mississippi river and the Tennessee River valley and is primarily comprised of low flat lands.
+                        In the 1835 acts of Tennessee, a legal distinction between the "Grand Divisions" was also specified. Under that law, the surpreme court had to meet once at the capital of each region once each year.
+
+                    </p>
+                    <!-- Javascript function that checks email addresses match in the form element defined below-->
+                    <script>
+function validateEmail()
+{
+    document.body.style.transform='scale(1)';
+    var email = document.getElementById("email").value;
+    var emailConfirm = document.getElementById("emailConfirm").value;
+    var submit = document.getElementById("mySubmit");
+ 
+    if(email !== emailConfirm)
+    {
+        console.log("failure");
+        alert("Email addresses do not match.");
+        return false;
+    }
+    else if (email.trim() === "" || emailConfirm.trim() === "")
+    {
+        console.log("failure");
+        alert("Both email fields must be filled with valid entries.");
+        return false; 
+    }
+    else if (email.includes("@") 
+    && emailConfirm.includes("@")
+    && email.includes(".")
+    && emailConfirm.includes("."))
+    {   
+        console.log("success");
+        alert("Email Addresses Match!");
+        return true; 
+    }
+    else 
+    {
+        console.log("failure");
+        alert("Email address fields appear to be invalid. Please check that both email addresses match and are in valid format including an '@' and '.' and try again.");
+        return false; 
+    }
+   
+}    
+                    </script>
+            
+                    <h1 class="H1">Feel free to send a question to our staff using the form below.</h1>
+                    <!-- Form written by example from textbook to fullfill assessment requirement-->
+                    <form method="GET" action="index.html" class="form" onSubmit="validateEmail()" >
+                            <div class="formElements"><label for="firstName" class="formElements">First Name:</label>
+                                <input type="text" name="firstName" class="formElements" placeholder="ex:Frank" ></div>
+                            <div class="formElements"><label for="lastName" class="formElements">Last Name:</label>
+                                <input type="text" name="lastName" class="formElements" placeholder="ex:West" ></div>
+                            <div class="formElements"><label for="email" class="formElements">Email:</label>
+                                <input type="text" name="email" class="formElements" placeholder="ex:frank.west@capcom.com" id="email" ></div>
+                            <div class="formElements"><label for="emailConfirm" class="formElements" >Confirm Email:</label>
+                                <input type="text" name="emailConfirm" class="formElements" placeholder="ex:frank.west@capcom.com" id="emailConfirm"></div>
+                            <div class="formElements"><label for="userQuestion" class="formElements" >User Question:</label>
+                                <input type="textarea" name="userQuestion" class="formElements"placeholder="Ask a question" >
+                                <input type="button" class="formElements" id="mySubmit" value="Submit" onclick="validateEmail()">
+                            </div>
+
+                        
+                    </form>
+                <p class="content">This website will provide information on the state as well as a few major cities in the region for travelers or just for the curious minded. Take a look around and feel free to examine the other pages including
+                    pages for Nashville, Chattanooga, and Knoxville!
+                </p>
+                <div id="bottomBanner"><img alt="tn state map" src="stateMap.jpg" height="200" ></div>
+                </section>
+                <!-- Aside and the aside container for CSS formatting-->
+            <div id="containerAside">
+                <aside>
+                    <h1 class="H1">
+                        Tennessee has a rich history!
+                    </h1>
+                    <p class="content">
+                        <div class="content">Fun facts about the great state!</br></div>
+                        <!-- Ordered list with five elements to fullfill assessment requirements-->
+                        <ol class="content" style="list-style-type: none;">
+                            <li>Tennessee is the birthplace and home of PepsiCo's Mountain Dew. Drink up! </li> 
+                            <br/>
+                            <li>Nashville's Grand Ole Opry is the longest running radio show of any kind. Shoutout country music fans! </li>
+                            <br/>
+                            <li>There is some historical evidence that cotton candy was first spun up in Tennessee. Yummy. </li>
+                            <br/>
+                            <li>Great Smokey Mountain National Park is the most visited park in the country by far more than doubling Yellowstone's annual total. If you have not made the climb... go. </li>
+                            <br/>
+                            <li>America's first female Senator, Hattie Carraway was born in Tennessee in 1878. That is excellent heritage.</li>
+                            <br/>
+                        </ol>
+                        <!-- Link to external page with target property to fullfill assessment requirements-->
+                        <a href="https://en.wikipedia.org/wiki/Tennessee" target="_blank" >Click here for more information in Wikipedia!</a>
+                    </p>
+                </aside>
+            </div>
+            <!-- footer and container for formatting-->
+            <div id="containerFooter">
+                <footer>
+                    <h1 class="H1">Gallery</h1>
+                    <h2 id="footerContent"></h2>
+                    <!-- Table with 3 columns and 3 rows to fullfill assessment requirements-->
+                        <table>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 1"
+                                    src="indexPic2.jpg"
+                                    width="140"height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 2"
+                                    src="indexPic3.jpg"
+                                    width="140"height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 3"
+                                    src="indexPic4.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 4"
+                                    src="indexPic5.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 5"
+                                    src="indexPic6.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 6"
+                                    src="indexPic7.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 7"
+                                    src="indexPic8.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 8"
+                                    src="indexPic9.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 9"
+                                    src="indexPic10.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                        </table>    
+                </footer>
+            </div>
+        </div>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="knoxville.css">
+        <title>City of Knoxville</title>
+    </head>
+        <div id="gridWrapper">
+            <div id="stateHeadingAndNavWrapper">
+                <header>
+                        <h1 class="H1" >
+                            City of Knoxville
+                        </h1>
+                </header>
+                <nav class="navbar">
+                    <a href="index.html">Back to Main Page</a>
+                    <a href="" >Activities and Tourism</a>
+                    <a href="" >Contact Us</a>
+                    <div class="dropdown">
+                        <span class="dropbtn">Cities
+                        </span>
+                        <div class="dropdown-content">
+                            <a href="nashville.html">Nashville</a>
+                            <a href="knoxville.html">Knoxville</a>
+                            <a href="memphis.html">Memphis</a>
+                            <a href="newcha.html">Chattanooga</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <section id="sectionContent">
+                    <h1 class="H1">Knoxville is the secret beauty of Tennessee!</h1>
+                    <ul class="content">
+                        Knoxville has diverse industry, history, and culture.
+                        <li>
+                            Nashville has many major industries from across the modern business climate. 
+                        </li>
+                        <li>
+                            Knoxville was founded a few hundred years ago in 1786. 
+                        </li>
+                        <li>
+                            Knoxville is a diverse blend of many kinds of people. The Arts and Culture Aliance, fine art, and Bijoi Theatre are all great ways to get your cultural fix. 
+                        </li>
+                    </ul>
+                    <div id="indexPic1"><img src="knoxvilleAside.jpg" alt="Nashville, Tennessee cityscape during a cloudy afternoon." id="indexPic1"></div>
+                    <h1 class="H1">Knoxville represents hard working folks being hugged by a striking mountainous geography. </h1>
+                    <p class="content">
+                        Knoxville, Tennessee has a population of just under 200,000 as of 2020. Knoxville is located in the East Tennessee
+                        Grand Division. The city is urban. The median household income is 33,000 per year. 
+                        Some important industries in Knoxville are trade, transportation, utilities, financial activities, and manufacturing. 
+                        Knoxville has an incredible history. James White founded the area in 1786 due to excellent geography and access to the Tennessee
+                        river. By 1791 the area was renamed to Knoxville and by the 1800s railroad and water access allowed the area to become a massive 
+                        distribution center for the South. Knoxville is located in the Great Appalachaian Valley somewhere between the Great
+                        Smokey Mountains to the east and the Cumberland Plateau to the west. This causes a unique climate that locals experience 
+                        most of the year because cold air is weakened by the mountains in the winter and hot air is weakened by the mountains in the summer. 
+<script>
+function validateEmail()
+{
+    document.body.style.transform='scale(1)';
+    var email = document.getElementById("email").value;
+    var emailConfirm = document.getElementById("emailConfirm").value;
+    var submit = document.getElementById("mySubmit");
+ 
+    if(email !== emailConfirm)
+    {
+        console.log("failure");
+        alert("Email addresses do not match.");
+        return false;
+    }
+    else if (email.trim() === "" || emailConfirm.trim() === "")
+    {
+        console.log("failure");
+        alert("Both email fields must be filled with valid entries.");
+        return false; 
+    }
+    else if (email.includes("@") 
+    && emailConfirm.includes("@")
+    && email.includes(".")
+    && emailConfirm.includes("."))
+    {   
+        console.log("success");
+        alert("Email Addresses Match!");
+        return true; 
+    }
+    else 
+    {
+        console.log("failure");
+        alert("Email address fields appear to be invalid. Please check that both email addresses match and are in valid format including an '@' and '.' and try again.");
+        return false; 
+    }
+   
+}    
+</script>
+            
+                    <h1 class="H1">Feel free to send a question to our staff using the form below.</h1>
+                    <!-- Form written by example from textbook to fullfill assessment requirement-->
+                    <form method="GET" action="index.html" class="form" onSubmit="validateEmail()" >
+                            <div class="formElements"><label for="firstName" class="formElements">First Name:</label>
+                                <input type="text" name="firstName" class="formElements" placeholder="ex:Frank" ></div>
+                            <div class="formElements"><label for="lastName" class="formElements">Last Name:</label>
+                                <input type="text" name="lastName" class="formElements" placeholder="ex:West" ></div>
+                            <div class="formElements"><label for="email" class="formElements">Email:</label>
+                                <input type="text" name="email" class="formElements" placeholder="ex:frank.west@capcom.com" id="email" ></div>
+                            <div class="formElements"><label for="emailConfirm" class="formElements" >Confirm Email:</label>
+                                <input type="text" name="emailConfirm" class="formElements" placeholder="ex:frank.west@capcom.com" id="emailConfirm"></div>
+                            <div class="formElements"><label for="userQuestion" class="formElements" >User Question:</label>
+                                <input type="textarea" name="userQuestion" class="formElements"placeholder="Ask a question" >
+                                <input type="button" class="formElements" id="mySubmit" value="Submit" onclick="validateEmail()">
+                            </div>
+
+                        
+                    </form>
+                <p class="content">This page will provide tourists and the curious minded an overview of what the a visit to the city of Knoxville might be like. Feel free to look around
+                    and take time to check out our other pages. 
+                </p>
+                <div id="bottomBanner"><img alt="map of knoxville" src="knoxvilleMap.png" id="bottomBanner"></div>
+                </section>
+            <div id="containerAside">
+                <aside>
+                    <h1 class="H1">
+                        Knoxville is Tennessee's best kept secret!
+                    </h1>
+                    <p class="content">
+                        <div class="content">Fun facts about Knoxville!</br></div>
+                        <ol class="content" style="list-style-type: none;">
+                            <li>Knoxville was home to one of the greatest Unions supporters during the civil war. William Brownlow was an editor for the Knoxville Whig newspaper and frequently 
+                                expressed his opinions. That's true bravery!</li> 
+                            <br/>
+                            <li>Knoxville was nicknamed "The Marble City" due to it being a massive hub for marble distribution 
+                                in the early 1900s. Marble Countertops, anyone? </li>
+                            <br/>
+                            <li>There are a total of seven lakes that surround Knoxville. Beach day! </li>
+                            <br/>
+                            <li>Mountain Dew was originally founded in Knoxville! Do the Dew!</li>
+                            <br/>
+                            <li>Knoxville was the original capital of Tennessee before Nashville was selected for its central location.</li>
+                            <br/>
+                        </ol>
+
+                        <a href="https://en.wikipedia.org/wiki/Tennessee" target="_blank">Click here for more information on Wikipedia!</a>
+                    </p>
+                </aside>
+            </div>
+            <div id="containerFooter">
+                <footer>
+                    <h1 class="H1">Gallery</h1>
+                    <h2 id="footerContent"></h2>
+                        <table>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 1"
+                                    src="knoxville1.jpg"
+                                    width="140"height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 2"
+                                    src="knoxville2.jpg"
+                                    width="140"height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 3"
+                                    src="knoxville3.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 4"
+                                    src="knoxville4.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 5"
+                                    src="knoxville5.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 6"
+                                    src="indexPic9.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 7"
+                                    src="indexPic13.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 8"
+                                    src="indexPic14.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 9"
+                                    src="indexPic12.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                        </table>    
+                </footer>
+            </div>
+        </div>
+</html>

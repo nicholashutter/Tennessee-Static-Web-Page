@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="memphis.css">
+        <title>City of Memphis</title>
+    </head>
+        <div id="gridWrapper">
+            <div id="stateHeadingAndNavWrapper">
+                <header>
+                        <h1 class="H1" >
+                            City of Memphis
+                        </h1>
+                </header>
+                <nav class="navbar">
+                    <a href="index.html">Back to Main Page</a>
+                    <a href="" >Activities and Tourism</a>
+                    <a href="" >Contact Us</a>
+                    <div class="dropdown">
+                        <span class="dropbtn">Cities
+                        </span>
+                        <div class="dropdown-content">
+                            <a href="nashville.html">Nashville</a>
+                            <a href="knoxville.html">Knoxville</a>
+                            <a href="memphis.html">Memphis</a>
+                            <a href="newcha.html">Chattanooga</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <section id="sectionContent">
+                    <h1 class="H1">Memphis is distinguished in it's history, culture, and landscape.</h1>
+                    <ul class="content">
+                        Memphis has diverse industry, history, and culture.
+                        <li>
+                            Memphis has many major industries from across the modern business climate. 
+                        </li>
+                        <li>
+                            Memphis was founded a few hundred years ago in 1819. 
+                        </li>
+                        <li>
+                            Memphis is a diverse blend of many kinds of people. Memphis foodie day, crosstown concourse, and overton park are all great ways to get your cultural fix. 
+                        </li>
+                    </ul>
+                    <div id="indexPic1"><img src="memphisAside.jpg" alt="Nashville, Tennessee cityscape during a cloudy afternoon." id="indexPic1"></div>
+                    <h1 class="H1">Memphis is a great place to build your life. </h1>
+                    <p class="content">
+                        The population of memphis is just over 650,000 as of 2020. Modern day memphis was founded in 1819. Memphis is located in the West Tennessee
+                        Grand Division. The city is urban. The median income was 32,000 per household as of 2020.
+                        Memphis has a diverse range of industry which provides plenty of opportunity for you and your family to start a new life in a beautiful place.
+                        Information technology, auto manufacturing and supply, advanced manufacturing, finance, healthcare and life science are all large industries around 
+                        Memphis. The city is located on the Western edge of the State and is bordered by the Mississippi river. After its intial settlement in 1819, Memphis quickly
+                        grew into a major city due to its flat, easily accessible terrain and excellent accesss to one of the most important rivers in early American history. 
+<script>
+function validateEmail()
+{
+    document.body.style.transform='scale(1)';
+    var email = document.getElementById("email").value;
+    var emailConfirm = document.getElementById("emailConfirm").value;
+    var submit = document.getElementById("mySubmit");
+ 
+    if(email !== emailConfirm)
+    {
+        console.log("failure");
+        alert("Email addresses do not match.");
+        return false;
+    }
+    else if (email.trim() === "" || emailConfirm.trim() === "")
+    {
+        console.log("failure");
+        alert("Both email fields must be filled with valid entries.");
+        return false; 
+    }
+    else if (email.includes("@") 
+    && emailConfirm.includes("@")
+    && email.includes(".")
+    && emailConfirm.includes("."))
+    {   
+        console.log("success");
+        alert("Email Addresses Match!");
+        return true; 
+    }
+    else 
+    {
+        console.log("failure");
+        alert("Email address fields appear to be invalid. Please check that both email addresses match and are in valid format including an '@' and '.' and try again.");
+        return false; 
+    }
+   
+}    
+</script>
+            
+                    <h1 class="H1">Feel free to send a question to our staff using the form below.</h1>
+                    <!-- Form written by example from textbook to fullfill assessment requirement-->
+                    <form method="GET" action="index.html" class="form" onSubmit="validateEmail()" >
+                            <div class="formElements"><label for="firstName" class="formElements">First Name:</label>
+                                <input type="text" name="firstName" class="formElements" placeholder="ex:Frank" ></div>
+                            <div class="formElements"><label for="lastName" class="formElements">Last Name:</label>
+                                <input type="text" name="lastName" class="formElements" placeholder="ex:West" ></div>
+                            <div class="formElements"><label for="email" class="formElements">Email:</label>
+                                <input type="text" name="email" class="formElements" placeholder="ex:frank.west@capcom.com" id="email" ></div>
+                            <div class="formElements"><label for="emailConfirm" class="formElements" >Confirm Email:</label>
+                                <input type="text" name="emailConfirm" class="formElements" placeholder="ex:frank.west@capcom.com" id="emailConfirm"></div>
+                            <div class="formElements"><label for="userQuestion" class="formElements" >User Question:</label>
+                                <input type="textarea" name="userQuestion" class="formElements"placeholder="Ask a question" >
+                                <input type="button" class="formElements" id="mySubmit" value="Submit" onclick="validateEmail()">
+                            </div>
+
+                        
+                    </form>
+                <p class="content">This page will provide tourists and the curious minded an overview of what the a visit to the city of Memphis might be like. Feel free to look around
+                    and take time to check out our other pages. 
+                </p>
+                <div id="bottomBanner"><img alt="map of memphis" src="memphisMap.jpg" id="bottomBanner" height="250" width="450"></div>
+                </section>
+            <div id="containerAside">
+                <aside>
+                    <h1 class="H1">
+                        Memphis is a great place to start a new life!
+                    </h1>
+                    <p class="content">
+                        <div class="content">Fun facts about Memphis!</br></div>
+                        <ol class="content" style="list-style-type: none;">
+                            <li>Memphis was the larget city in Tennessee for almost all of the states history only to be recently supplanted by Nashville
+                                due to an influx of relocations from other states since the pandemic. 
+                            </li> 
+                            <br/>
+                            <li>Memphis is the site of the national Civil Rights Museum. </li>
+                            <br/>
+                            <li>Elvis Presley's home, Graceland, is in Memphis and attracts half a million visitors annually. </li>
+                            <br/>
+                            <li>Memphis has both a zoo and aquarium for tourists and locals alike!
+                            </li>
+                            <br/>
+                            <li>Popular blues artist W.C. Handy got his start on Beale street in Memphis giving birth to the blues genre. </li>
+                            <br/>
+                        </ol>
+
+                        <a href="https://en.wikipedia.org/wiki/Tennessee" target="_blank" >Click here for more information on Wikipedia!</a>
+                    </p>
+                </aside>
+            </div>
+            <div id="containerFooter">
+                <footer>
+                    <h1 class="H1">Gallery</h1>
+                    <h2 id="footerContent"></h2>
+                        <table>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 1"
+                                    src="memphis1.jpg"
+                                    width="140"height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 2"
+                                    src="memphis3.jpg"
+                                    width="140"height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 3"
+                                    src="memphis2.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 4"
+                                    src="memphis4.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 5"
+                                    src="memphis5.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 6"
+                                    src="memphis6.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="contentTD">
+                                    <img alt="tn picture 7"
+                                    src="memphis7.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 8"
+                                    src="memphis8.jpg"
+                                    width="140" height="70">
+                                </td>
+                                <td class="contentTD">
+                                    <img alt="tn picture 9"
+                                    src="memphis9.jpg"
+                                    width="140" height="70">
+                                </td>
+                            </tr>
+                        </table>    
+                </footer>
+            </div>
+        </div>
+</html>
